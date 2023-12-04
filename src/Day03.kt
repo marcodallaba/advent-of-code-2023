@@ -1,10 +1,8 @@
-import java.util.HashMap
-import java.util.Scanner
-import kotlin.math.max
-
 fun main() {
 
     val input = readInput("Day03")
+
+    firstHalf03(input)
 
     secondHalf03(input)
 }
@@ -50,8 +48,6 @@ fun firstHalf03(input: List<String>) {
 
                     val result = right || left || top || bottom
 
-                    println("currentNum: $currentNum, result: $result, right:$right, left:$left, top:$top, bottom:$bottom")
-
                     if (result) {
                         sum += currentNum
                     }
@@ -88,8 +84,6 @@ fun firstHalf03(input: List<String>) {
                     }
 
                     val result = right || left || top || bottom
-
-                    println("currentNum: $currentNum, result: $result, right:$right, left:$left, top:$top, bottom:$bottom")
 
                     if (result) {
                         sum += currentNum
